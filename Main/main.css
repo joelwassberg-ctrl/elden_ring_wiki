@@ -9,14 +9,14 @@ body{
     height: 200vh;
 }
 .box{
+    margin: 5%;
     display: inline-block;
-    width: 200px;
-    height: 100px;
+    width: 20%;
+    height: 10%;
     background-color: lightblue;
     text-align: center;
     line-height: 100px;
     font-size: 150%;
-    margin: 20px auto;
     text-decoration: none;
     color: black;
 }
