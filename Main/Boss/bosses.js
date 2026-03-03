@@ -1,7 +1,7 @@
 const url = "https://eldenring.fanapis.com/api/bosses";
 
 async function fetchBosses() {
-    try{
+  try{
 const response = await fetch(url);
 const data = await response.json();
 console.log(data);
