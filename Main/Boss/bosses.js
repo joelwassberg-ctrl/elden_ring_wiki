@@ -1,21 +1,29 @@
 const url = "https://eldenring.fanapis.com/api/bosses";
+let bosses = [];
 
 async function fetchBosses() {
   try{
 const response = await fetch(url);
 const data = await response.json();
 console.log(data);
-    const boss = data.data;
+    bosses = data.data;
+    displayBosses(bosses);
 
-    if (!boss) {
-      console.log("Boss not found!");
+    if (!bosses) {
+      console.log("Bosses not found!");
       return;
     }
+   } catch(error){
+    console.error("Error fetching bosses:", error);
+  }
+}
+fetchBosses();
 
+function displayBosses(bossesToDisplay) {
+  
     const container = document.getElementById("boss_container");
     container.innerHTML = "";
-    
-    boss.forEach(boss => {
+      bossesToDisplay.forEach(boss => {
         const img = document.createElement("img");
         img.src = boss.image;
         img.alt = boss.name;
@@ -25,9 +33,17 @@ console.log(data);
 
         container.appendChild(img);
         container.appendChild(name);
-    });
-   } catch(error){
-    console.error("Error fetching bosses:", error);
-  }
+});
 }
-fetchBosses();
+const searchInput = document.getElementById("search");
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+
+  // filtrera vapnen som matchar sökningen
+  const filtered = bosses.filter(boss =>
+    boss.name.toLowerCase().includes(query)
+  );
+
+  displayBosses(filtered);
+});

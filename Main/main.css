@@ -7,6 +7,13 @@ header{
 }
 body{
     height: 200vh;
+    background-image: url(/Images/wzqo9olsot471.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.container{
+    text-align: center;
 }
 .box{
     margin: 5%;
