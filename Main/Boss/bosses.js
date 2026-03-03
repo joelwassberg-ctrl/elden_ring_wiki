@@ -26,8 +26,8 @@ console.log(data);
         container.appendChild(img);
         container.appendChild(name);
     });
-   } catch(err){
-    console.error("Error fetching bosses:", err);
+   } catch(error){
+    console.error("Error fetching bosses:", error);
   }
 }
 fetchBosses();
