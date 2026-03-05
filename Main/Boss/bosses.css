@@ -1,3 +1,14 @@
 .boss_images img{
-    width: 30%;
+    width: 30vw;
+    height: 40vh;
+    margin:1%;
+}
+div{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom:5%;
+}
+.boss_images p{
+    word-wrap:break-word;
+    width:15vw;
 }
