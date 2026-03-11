@@ -19,6 +19,9 @@ console.log(data);
 }
 fetchBosses();
 
+//fetchBosses hämtar data for API. Sedan kör displayBosses som visar datan i html. 
+// searchInput är ansvarig för sökfunktionen.
+
 function displayBosses(bossesToDisplay) {
   
     const container = document.getElementById("boss_container");
@@ -29,10 +32,20 @@ function displayBosses(bossesToDisplay) {
         img.alt = boss.name;
 
         const name = document.createElement("p");
-        name.textContent = boss.name;
+        name.textContent = "Name: " +boss.name;
 
-        container.appendChild(img);
-        container.appendChild(name);
+        const location = document.createElement("p");
+        location.textContent = "Location: " + boss.location;
+
+        const description = document.createElement("p");
+        description.textContent = "Description: " + boss.description;
+
+        const makeDiv = document.createElement("div");
+        container.appendChild(makeDiv);
+        makeDiv.appendChild(img);
+        makeDiv.appendChild(name);
+        makeDiv.appendChild(location);
+        makeDiv.appendChild(description);
 });
 }
 const searchInput = document.getElementById("search");

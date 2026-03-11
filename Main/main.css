@@ -21,6 +21,7 @@ body{
     width: 20%;
     height: 10%;
     background-color: lightblue;
+    background-image: var(--bg);
     text-align: center;
     line-height: 100px;
     font-size: 3.5vw;
@@ -28,9 +29,11 @@ body{
     color: black;
     border-radius: 20px;
     background-size: cover;
+    transition: 0.1s;
 }
 .box:hover{
     transform: scale(1.1);
-    transition: 0.1s;
-    background-image: url(/images/Black_smith.webp);
+}
+.sorcery:hover{
+    background-image: url(/images/Raya_light.webp);
 }
