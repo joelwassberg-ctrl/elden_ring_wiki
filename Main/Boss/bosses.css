@@ -17,6 +17,7 @@ div{
 }
 .boss_images div{
     border: 1px solid black;
+    background-color: lightgrey;
 }
 header{
     top: 0;

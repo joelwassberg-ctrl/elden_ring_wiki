@@ -1,7 +1,6 @@
 const url = "https://eldenring.fanapis.com/api/bosses";
-let bosses = [];
 
-async function fetchBosses() {
+async function fetchIncantations() {
   try{
 const response = await fetch(url);
 const data = await response.json();
@@ -17,7 +16,7 @@ console.log(data);
     console.error("Error fetching bosses:", error);
   }
 }
-fetchBosses();
+fetchIncantations();
 
 //fetchBosses hämtar data for API. Sedan kör displayBosses som visar datan i html. 
 // searchInput är ansvarig för sökfunktionen.
@@ -27,8 +26,9 @@ function displayBosses(bossesToDisplay) {
     const container = document.getElementById("boss_container");
     container.innerHTML = "";
       bossesToDisplay.forEach(boss => {
+        
         const img = document.createElement("img");
-        img.src = boss.image;
+        img.src = boss.image ? boss.image : "/images/Logo.svg";
         img.alt = boss.name;
 
         const name = document.createElement("p");
