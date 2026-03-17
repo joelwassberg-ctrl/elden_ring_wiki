@@ -40,12 +40,16 @@ function displayBosses(bossesToDisplay) {
         const description = document.createElement("p");
         description.textContent = "Description: " + boss.description;
 
+        const drops = document.createElement("p");
+        drops.textContent = "Drops: " + boss.drops;
+
         const makeDiv = document.createElement("div");
         container.appendChild(makeDiv);
         makeDiv.appendChild(img);
         makeDiv.appendChild(name);
         makeDiv.appendChild(location);
         makeDiv.appendChild(description);
+        makeDiv.appendChild(drops);
 });
 }
 const searchInput = document.getElementById("search");

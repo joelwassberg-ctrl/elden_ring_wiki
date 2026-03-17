@@ -12,8 +12,14 @@ const location = "	https://eldenring.fanapis.com/api/locations";
 // Här kan jag enkelt byta ut url för att see informationen i logen utan att störa min andra kod.
 
 async function fetchIncantations() {
-        const response = await fetch(ash);
+        const response = await fetch(boss);
         const data = await response.json();
         console.log(data);
+        let bosses = data.data;
+        for (boss of bosses) {
+                if (boss.drops) {
+            console.log(boss.drops);
+                }
+        }
 }
 fetchIncantations();
