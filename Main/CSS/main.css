@@ -16,46 +16,52 @@ body{
     text-align: center;
 }
 .box{
-    margin: 5%;
+    margin: 3%;
     display: inline-block;
-    width: 20%;
+    width: 25%;
     height: 10%;
     background-color: lightblue;
     background-image: var(--bg);
     text-align: center;
     line-height: 25vh;
-    font-size: 6vh;
+    font-size: 5vw;
     text-decoration: none;
     color: black;
     border-radius: 20px;
     background-size: cover;
-    transition: 0.2s;
+    transition: opacity 0.2s ease;
     border-width: 0.05em;
     border-style: solid;
     border-color: lightgrey;
     -webkit-text-stroke: 0.3px white;
 }
+.contact{
+    position:absolute;
+    font-size:60%;
+    right:1%;
+}
+.contact-container{
+    height:40%;
+    width:60%;
+    background-color: grey;
+    margin:auto;
+    text-align: center;
+    font-size:250%;
+}
 @media (max-width: 600px) {
     .box{
         margin:1%;
         width:40%;
+        font-size: 6vw;
+    }
+    .contact{
+        font-size:50%;
     }
 }
+
 .box:hover{
     transform: scale(1.1);
 }
-.sorcery:hover{
-    background-image: url(/images/Raya_light.webp);
-}
-.boss{
-    background-image: url(/images/RotBoss.webp);
-}
-.boss:hover{
-    background-image: url(/images/PrimeBoss.webp);
-}
-.incantation{
-    background-image: url(/images/IncantBox.webp);
-}
-.incantation:hover{
-    background-image: url(/images/IncantDesk.webp);
+.font{
+    font-family: "Playfair Display", serif;
 }

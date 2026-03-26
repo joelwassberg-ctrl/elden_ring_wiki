@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link rel="icon" href="/Images/Logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+Pahawh+Hmong&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Images/Logo.svg" type="image/svg+xml">
     <title>Elden Ring Wiki</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header>ELDEN RING WIKI</header>
+    <header class="font">ELDEN RING WIKI <a class="contact" href="../Contact/contact.html">Contact us</a> </header>
     <div class="container">
-    <a class="box boss" href="Boss/bosses.html">Bosses</a>
-    <a class="box weapon" style="--bg: url(/images/Black_smith.webp)" href="Weapon/weapons.html">Weapons</a>
-    <a class="box incantation" href="Incantation/incantations.html">Incantations</a>
-    <a class="box talisman" href="Talisman/talismans.html">Talismans</a>
-    <a class="box sorcery" style="--bg: url(/images/raya_lucaria.jpg)" href="Sorcery/sorceries.html">Sorceries</a>
-    <a class="box armor" href="Armor/armors.html">Armors</a>
-    <a class="box npc" href="npc/npcs.html">NPCs</a>
-    <a class="box ash" href="ashOfWar/ashes.html">Ash of War</a>
-    <a class="box item" href="Item/items.html">Items</a>
+    <a class="box boss" data-name="boss" href="Boss/bosses.html">Bosses</a>
+    <a class="box weapon" data-name="weapon" href="Weapon/weapons.html">Weapons</a>
+    <a class="box incantation" data-name="incant"href="Incantation/incantations.html">Incantations</a>
+    <a class="box talisman" data-name="talisman" href="Talisman/talismans.html">Talismans</a>
+    <a class="box sorcery" data-name="sorcery" href="Sorcery/sorceries.html">Sorceries</a>
+    <a class="box armor" data-name="armor" href="Armor/armors.html">Armors</a>
+    <a class="box npc" data-name="npc"href="npc/npcs.html">NPCs</a>
+    <a class="box ash" data-name="ash"href="ashOfWar/ashes.html">Ash of War</a>
+    <a class="box item" data-name="item"href="Item/items.html">Items</a>
     </div>
     <script src="main.js"></script>
 </body>
