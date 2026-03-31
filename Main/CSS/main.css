@@ -1,7 +1,7 @@
 header{
     top: 0;
     position:sticky;
-    text-align: center;
+    text-align: center;;
     font-size: 250%;
     background-color: lightgrey;
 }
@@ -48,7 +48,7 @@ body{
     text-align: center;
     font-size:250%;
 }
-@media (max-width: 600px) {
+@media (max-width: 430px) {
     .box{
         margin:1%;
         width:40%;
@@ -56,6 +56,10 @@ body{
     }
     .contact{
         font-size:50%;
+    }
+    header{
+        font-size: 200%;
+        text-align:start;
     }
 }
 

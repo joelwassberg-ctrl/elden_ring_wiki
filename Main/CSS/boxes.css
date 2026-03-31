@@ -40,3 +40,9 @@ body{
     font-size: 100%;
     margin-top: 2%;
 }
+.backToHome{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 60%;
+}

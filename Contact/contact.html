@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../Main/CSS/main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="../Images/Logo.svg" type="image/svg+xml">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <h1 style="color:white; text-align: center;">Hur kan vi hjälpa dig?</h1>
+    <a href="../Main/main.html" class="backToHome">Home</a>
     <div class="contact-container">
-        <p>Din mailadress: <input> </p>
-        <p>Ditt ärende (rubrik): <input> </p>
-        <p>Beskriv ditt ärende: <input> </p>
-        <button>Skicka</button>
+        <p>Din mailadress: <input id="mail"> </p>
+        <p>Ditt ärende (rubrik): <input id="subject"> </p>
+        <p>Beskriv ditt ärende: <input id="message"> </p>
+        <button id="button">Skicka</button>
     </div>
+    <script src="contact.js"></script>
 </body>
 </html>
