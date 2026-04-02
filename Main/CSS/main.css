@@ -11,6 +11,10 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-color: black;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
 }
 .container{
     text-align: center;
@@ -48,6 +52,41 @@ body{
     text-align: center;
     font-size:250%;
 }
+.world_record{
+    position:absolute;
+    font-size:60%;
+    left:1%;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.font{
+    font-family: "Playfair Display", serif;
+}
+.backToHome{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 1em;
+    background-color: lightblue;
+    width:15%;
+    height:90%;
+    text-align: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+table{
+    border: 1px solid black;
+    width:80%;
+    margin:auto;
+}
+th, td{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 1%;
+}
 @media (max-width: 430px) {
     .box{
         margin:1%;
@@ -56,16 +95,18 @@ body{
     }
     .contact{
         font-size:50%;
+        bottom:5%;
+    }
+    .world_record{
+        font-size:50%;
+        bottom:5%;
     }
     header{
         font-size: 200%;
-        text-align:start;
+        height:15vw;
     }
-}
-
-.box:hover{
-    transform: scale(1.1);
-}
-.font{
-    font-family: "Playfair Display", serif;
+    table{
+        height:75%;
+        width:100%;
+    }
 }
