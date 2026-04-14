@@ -58,3 +58,9 @@ searchInput.addEventListener("input", () => {
 
   displayApiData(filtered);
 });
+
+//gör så att man kommer tillbaka till Main websidan när man trycker på headern
+const header = document.querySelector("header");
+header.addEventListener("click", () => {
+  window.location.href = "../main.html";
+})

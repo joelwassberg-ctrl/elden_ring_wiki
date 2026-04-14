@@ -1,3 +1,4 @@
+if (window.location.pathname.endsWith("contact.html")) {
 const skicka = document.getElementById("button");
 const mailInput = document.getElementById("mail");
 const subjectInput = document.getElementById("subject");
@@ -6,6 +7,8 @@ const messageInput = document.getElementById("message");
 function isMail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+
+    
 }
 
 function isEmpty(input) {
@@ -15,7 +18,6 @@ function isEmpty(input) {
         return false;
     }
 }
-
 skicka.addEventListener("click", function(){
     let email = mailInput.value;
     if (isMail(email)) {
@@ -29,3 +31,9 @@ skicka.addEventListener("click", function(){
     }
 } )
 
+}
+
+const header = document.querySelector("header");
+header.addEventListener("click", () => {
+  window.location.href = "../Main/main.html";
+})
