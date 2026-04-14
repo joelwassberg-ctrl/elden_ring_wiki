@@ -22,7 +22,7 @@ function displayApiData(apiDataToDisplay) {
       apiDataToDisplay.forEach(object => {
         
         const img = document.createElement("img");
-        img.src = object.image ? object.image : "/images/Logo.svg";
+        img.src = object.image ? object.image : "images/Logo.svg";
         img.alt = object.name;
 
         const name = document.createElement("p");
