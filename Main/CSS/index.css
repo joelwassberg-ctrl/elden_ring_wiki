@@ -1,0 +1,32 @@
+body{
+    background-image: url("/Images/Elden_ring_hero_background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.headText{
+    font-size: 250%;
+    color: lightblue;
+    margin-top: 20%;
+    -webkit-text-stroke: 1px black;
+}
+.container{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 150%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 20px;
+    padding: 1% 10%;
+    transition: 0.3s;
+}
+a:hover{
+    background-color: lightblue;
+    color: black;
+    border-color: lightblue;
+}

@@ -24,26 +24,20 @@ function displayApiData(apiDataToDisplay) {
         const img = document.createElement("img");
         img.src = object.image ? object.image : "/Images/Logo.svg";
         img.alt = object.name;
-
-        const name = document.createElement("p");
-        name.textContent = "Name: " + object.name;
-
-        const location = document.createElement("p");
-        location.textContent = "Location: " + object.location;
-
-        const description = document.createElement("p");
-        description.textContent = "Description: " + object.description;
-
-        const drops = document.createElement("p");
-        drops.textContent = "Drops: " + object.drops;
+        img.loading = "lazy";
 
         const makeDiv = document.createElement("div");
         container.appendChild(makeDiv);
         makeDiv.appendChild(img);
-        makeDiv.appendChild(name);
-        makeDiv.appendChild(location);
-        makeDiv.appendChild(description);
-        makeDiv.appendChild(drops);
+
+        let attributes = ["name", "location", "description", "drops", "cost", "slots", "effects"];
+        for (each in attributes) {
+          if (object.hasOwnProperty(attributes[each])) {
+            const attributeValue = document.createElement("p");
+            attributeValue.textContent = attributes[each] + ": " + object[attributes[each]];
+            makeDiv.appendChild(attributeValue);
+          }
+        }
 });
 }
 const searchInput = document.getElementById("search");

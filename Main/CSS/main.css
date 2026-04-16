@@ -8,7 +8,7 @@ header{
 body{
     margin:0;
     height: 200vh;
-    background-image: url(../../Images/EldenRingCover.webp);
+    background-image: url("/Images/EldenRingCover.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: black;
@@ -16,7 +16,7 @@ body{
 }
 a{
     text-decoration: none;
-    color:lightblue;
+    color:black;
 }
 .container{
     text-align: center;
@@ -35,7 +35,6 @@ a{
     color: black;
     border-radius: 20px;
     background-size: cover;
-    transition: opacity 0.2s ease;
     border-width: 0.05em;
     border-style: solid;
     border-color: lightgrey;

@@ -32,7 +32,7 @@ header{
 body{
     margin: 0;
     padding: 0;
-    background-image: url("../../Images/Stars.webp");
+    background-image: url("/Images/Stars.webp");
     overflow-x:hidden;
 }
 .searchfield{
@@ -41,6 +41,7 @@ body{
     padding: 1% 1%;
     font-size: 100%;
     margin-top: 2%;
+    background-color: lightblue;
 }
 a{
     text-decoration: none;
