@@ -13,7 +13,7 @@ const creature = "https://eldenring.fanapis.com/api/creatures";
 // Här kan jag enkelt byta ut url för att see informationen i logen utan att störa min andra kod.
 
 async function fetchIncantations() {
-        const response = await fetch(sorcery);
+        const response = await fetch(item);
         const data = await response.json();
         console.log(data);
         let bosses = data.data;

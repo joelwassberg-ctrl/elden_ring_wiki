@@ -1,9 +1,14 @@
 header{
     top: 0;
     position:sticky;
-    text-align: center;;
-    font-size: 250%;
+    font-size: 225%;
     background-color: linen;
+    width:100%;
+}
+header *{
+    display: inline-block;
+    margin-left:5%;
+    font-size: 65%;
 }
 body{
     margin:0;
@@ -14,6 +19,9 @@ body{
     background-color: black;
     overflow-x: hidden;
 }
+img{
+    loading: lazy;
+}
 a{
     text-decoration: none;
     color:black;
@@ -22,29 +30,23 @@ a{
     text-align: center;
 }
 .box{
+    background-position: center;
     margin: 3%;
     display: inline-block;
     width: 25%;
     height: 10%;
     background-color: lightblue;
-    background-image: var(--bg);
-    text-align: center;
     line-height: 25vh;
     font-size: 5vw;
-    text-decoration: none;
     color: black;
     border-radius: 20px;
     background-size: cover;
     border-width: 0.05em;
     border-style: solid;
-    border-color: lightgrey;
-    -webkit-text-stroke: 0.3px white;
+    border-color: linen;
+    -webkit-text-stroke: 0.3px linen;
 }
-.contact{
-    position:absolute;
-    font-size:60%;
-    right:1%;
-}
+
 .contact-container{
     height:40%;
     width:60%;
@@ -52,11 +54,6 @@ a{
     margin:auto;
     text-align: center;
     font-size:250%;
-}
-.world_record{
-    position:absolute;
-    font-size:60%;
-    left:1%;
 }
 .box:hover{
     transform: scale(1.1);
@@ -76,21 +73,11 @@ th, td{
 }
 @media (max-width: 430px) {
     .box{
-        margin:1%;
         width:40%;
         font-size: 6vw;
     }
-    .contact{
-        font-size:50%;
-        bottom:5%;
-    }
-    .world_record{
-        font-size:50%;
-        bottom:5%;
-    }
     header{
         font-size: 200%;
-        height:15vw;
     }
     table{
         height:75%;
