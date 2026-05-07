@@ -9,11 +9,13 @@ const item = "https://eldenring.fanapis.com/api/items";
 const npc = "https://eldenring.fanapis.com/api/npcs";
 const location = "https://eldenring.fanapis.com/api/locations";
 const creature = "https://eldenring.fanapis.com/api/creatures";
+const spirit = "https://eldenring.fanapis.com/api/spirits"
+const classes = "https://eldenring.fanapis.com/api/classes"
 
 // Här kan jag enkelt byta ut url för att see informationen i logen utan att störa min andra kod.
 
 async function fetchIncantations() {
-        const response = await fetch(item);
+        const response = await fetch(spirit);
         const data = await response.json();
         console.log(data);
         let bosses = data.data;

@@ -38,7 +38,7 @@ function displayApiData(apiDataToDisplay) {
 
         console.log(object);
         let attributes = ["name", "location", "description", "drops", "cost", "slots", "affinity", "effect","effects", "weight",
-          "category", "role", "type"
+          "category", "role", "type", "region", "fpCost"
         ];
         for (each in attributes) {
           if (object.hasOwnProperty(attributes[each])) {
