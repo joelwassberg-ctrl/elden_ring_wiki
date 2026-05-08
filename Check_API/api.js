@@ -14,6 +14,8 @@ const classes = "https://eldenring.fanapis.com/api/classes"
 
 // Här kan jag enkelt byta ut url för att see informationen i logen utan att störa min andra kod.
 
+//OBS: Den här är BARA här för att titta på informationen inom respetive API. Har inget med riktiga websidan att göra.
+
 async function fetchIncantations() {
         const response = await fetch(spirit);
         const data = await response.json();
