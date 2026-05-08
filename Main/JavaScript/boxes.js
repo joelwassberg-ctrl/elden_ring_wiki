@@ -30,6 +30,7 @@ function displayApiData(apiDataToDisplay) {
         const img = document.createElement("img");
         img.src = object.image ? object.image : "/Images/Logo.svg";
         img.alt = object.name;
+        //ger images lazy loading
         img.loading = "lazy";
 
         const makeDiv = document.createElement("div");

@@ -19,9 +19,6 @@ body{
     background-color: black;
     overflow-x: hidden;
 }
-img{
-    loading: lazy;
-}
 a{
     text-decoration: none;
     color:black;
