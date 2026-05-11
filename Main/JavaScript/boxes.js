@@ -1,9 +1,26 @@
 //gör så att man kommer tillbaka till Main websidan när man trycker på headern
+document.addEventListener("DOMContentLoaded", () => {
 const header_thispage = document.querySelector("header");
 header_thispage.addEventListener("click", () => {
   window.location.href = "/Main/main.html";
 });
+const searchInput = document.getElementById("search");
 
+if (searchInput !== null) {
+  searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+
+  // filtrera vapnen som matchar sökningen
+  const filtered = apiData.filter(object =>
+    object.name.toLowerCase().includes(query)
+  );
+
+  displayApiData(filtered);
+});
+}
+
+
+});
 async function fetchApi(url) {
   try{
 const response = await fetch(url);
@@ -50,18 +67,3 @@ function displayApiData(apiDataToDisplay) {
         }
 });
 }
-const searchInput = document.getElementById("search");
-
-if (searchInput !== null) {
-  searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase();
-
-  // filtrera vapnen som matchar sökningen
-  const filtered = apiData.filter(object =>
-    object.name.toLowerCase().includes(query)
-  );
-
-  displayApiData(filtered);
-});
-}
-

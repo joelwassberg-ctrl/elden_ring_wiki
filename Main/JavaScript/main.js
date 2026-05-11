@@ -1,6 +1,5 @@
-window.onload = function(){
-
-    const boxes = document.querySelectorAll(".box");
+document.addEventListener("DOMContentLoaded", () => {
+        const boxes = document.querySelectorAll(".box");
    
     boxes.forEach(box => {
     const name = box.dataset.name;
@@ -22,5 +21,6 @@ boxes.forEach(box => {
     window.location.href = `info.html?type=${type}&id=${id}`;
     });
  });
-}
+
+});
 

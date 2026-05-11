@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const params = new URLSearchParams(window.location.search);
 
 const type = params.get("type");
@@ -50,3 +51,4 @@ if (type === "classes"){
     api = "https://eldenring.fanapis.com/api/classes"
 }
 fetchApi(api);
+});
