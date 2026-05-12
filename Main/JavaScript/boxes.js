@@ -19,7 +19,6 @@ if (searchInput !== null) {
 });
 }
 
-
 });
 async function fetchApi(url) {
   try{
@@ -28,7 +27,7 @@ const data = await response.json();
 console.log(data);
     apiData = data.data;
     if (!apiData) {
-      console.log("Api data not found!");
+      console.log("Api data not found in the response. Check the API response structure. Or the API information is not found. Check the API url.");
       return;
     }
     displayApiData(apiData);
@@ -50,20 +49,31 @@ function displayApiData(apiDataToDisplay) {
         //ger images lazy loading
         img.loading = "lazy";
 
+        const Name = document.createElement("h1");
+        Name.textContent = object.name;
+
         const makeDiv = document.createElement("div");
         container.appendChild(makeDiv);
         makeDiv.appendChild(img);
+        makeDiv.appendChild(Name);
 
         console.log(object);
-        let attributes = ["name", "location", "description", "drops", "cost", "slots", "affinity", "effect","effects", "weight",
+        let attributes = ["location", "description", "drops", "cost", "slots", "affinity", "effect","effects", "weight",
           "category", "role", "type", "region", "fpCost"
         ];
         for (each in attributes) {
           if (object.hasOwnProperty(attributes[each])) {
             const attributeValue = document.createElement("p");
+            attributeValue.classList.add("individual_p");
             attributeValue.textContent = attributes[each] + ": " + object[attributes[each]];
             makeDiv.appendChild(attributeValue);
           }
         }
+    makeDiv.addEventListener("click", (event) => {
+    const info = makeDiv.querySelector("p");
+    makeDiv.querySelectorAll("p").forEach(p => {
+      p.classList.toggle("individual_p");
+    })
+});
 });
 }
