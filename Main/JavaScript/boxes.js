@@ -49,13 +49,13 @@ function displayApiData(apiDataToDisplay) {
         //ger images lazy loading
         img.loading = "lazy";
 
-        const Name = document.createElement("h1");
-        Name.textContent = object.name;
+        const name = document.createElement("h1");
+        name.textContent = object.name;
 
         const makeDiv = document.createElement("div");
         container.appendChild(makeDiv);
         makeDiv.appendChild(img);
-        makeDiv.appendChild(Name);
+        makeDiv.appendChild(name);
 
         console.log(object);
         let attributes = ["location", "description", "drops", "cost", "slots", "affinity", "effect","effects", "weight",

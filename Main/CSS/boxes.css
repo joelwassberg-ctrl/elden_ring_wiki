@@ -1,4 +1,5 @@
 .object_container img{
+    border-radius: 10px;
     /* Width är 29vw så att bilden inte täcker ena sidan av container. alltså inte ett gissat number */
     width: 29vw;
     height: 40vh;
@@ -19,6 +20,7 @@ div{
     transform: scale(1.1); 
 }
 .object_container div{
+    border-radius: 10px;
     width: 30vw;
     border: 1px solid black;
     background-color: lightblue;
@@ -37,6 +39,7 @@ body{
     overflow-x:hidden;
 }
 .searchfield{
+    border-radius: 10px;
     margin-left:25%;
     width: 50%;
     padding: 1% 1%;
@@ -57,8 +60,11 @@ footer{
         width: 40vw;
         height: 15vh;
     }
-    .object_container p{
+    .object_container div{
         width: 45vw;
+    }
+    input{
+        font-size: 10%;
     }
 }
 .individual_p{

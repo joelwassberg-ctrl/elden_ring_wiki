@@ -1,41 +1,69 @@
 body{
-    background-image: url("/Images/Elden_ring_hero_background.webp");
+    width:100vw;
+    height:100vh;
+    background-image: url("/Images/index_bg.webp");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     overflow-y: hidden;
     overflow-x: hidden;
     margin:0;
-    min-height: 100vh;
+    background-repeat: no-repeat;
 }
 .headText{
     font-size: 250%;
     color: lightblue;
     margin-top: 20%;
-    -webkit-text-stroke: 1px black;
 }
 .container{
+    margin-top: 5%;
     text-align: center;
 }
 a{
-    text-decoration: none;
-    color: lightgrey;
-    font-size: 150%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: grey;
-    border-radius: 20px;
-    padding: 1% 10%;
+    border: 2px solid lightgoldenrodyellow;
+    display:inline-block;
+    color:lightgoldenrodyellow;
     transition: 0.3s;
+    border-radius: 25px;
+    padding:2% 10%;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 a:hover{
-    background-color: lightblue;
-    color: black;
-    border-color: lightblue;
+    transform: scale(1.1);
+    background-color: darkgoldenrod;
+    opacity: 0.8;
+}
+.hero_img{
+    display:block;
+    margin:auto;
+    width: 50%;
+}
+footer{
+    position:fixed;
+    bottom:-2%;
+    width:100%;
+    text-align: center;
+    color: lightblue;
 }
 @media (max-width: 430px) {
-    div *{
-        display:inline-block;
-        margin-top:20%;
+    .headText{
+        font-size: 150%;
+    }
+    a{
+        font-size: 150%;
+        width: 30%;
+        padding:5% 10%;
+        margin:5%;
+    }
+    body{
+        height:100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .hero_img{
+        margin-top:25%;
+        width: 100%;
     }
 }

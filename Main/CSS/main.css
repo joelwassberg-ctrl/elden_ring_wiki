@@ -43,15 +43,6 @@ a{
     border-color: linen;
     -webkit-text-stroke: 0.3px linen;
 }
-
-.contact-container{
-    height:40%;
-    width:60%;
-    background-color: grey;
-    margin:auto;
-    text-align: center;
-    font-size:250%;
-}
 .box:hover{
     transform: scale(1.1);
 }

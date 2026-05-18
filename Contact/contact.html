@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/Main/CSS/contact.css">
     <link rel="stylesheet" href="../Main/CSS/main.css">
     <link rel="icon" href="../Images/Logo.svg" type="image/svg+xml">
     <meta charset="UTF-8">
@@ -11,13 +12,48 @@
     <header>
         <h1>Contact us</h1>
     </header>
-    <h1 style="color:white; text-align: center;">Hur kan vi hjälpa dig?</h1>
-    <h2 style="color:white; text-align: center;">Fyll i formuläret nedan så återkommer vi så fort som möjligt!</h2>
+    <h1 class="heading">Hur kan vi hjälpa dig?</h1>
+    <h2 class="heading">Fyll i formuläret nedan så återkommer vi så fort som möjligt!</h2>
     <div class="contact-container">
-        <p>Din mailadress: <input id="mail"> </p>
-        <p>Ditt ärende (rubrik): <input id="subject"> </p>
-        <p>Beskriv ditt ärende: <input id="message"> </p>
-        <button id="button">Skicka</button>
+        <form>
+            <p>Problemet är på:</p>
+            <label>
+                <input type="radio" name="contact" value="dator">Dator
+            </label>
+        
+            <label>
+                <input type="radio" name="contact" value="mobil">Mobil
+            </label>
+
+            <br>
+
+            <p>Din mailadress:</p>
+            <label>
+                <input id="mail">
+            </label>
+
+            <br>
+
+            <p>Ditt ärende (rubrik):</p>
+            <label>
+                <input id="subject">
+            </label>
+
+            <br>
+
+            <p>Beskriv ditt ärende:</p>
+            <label>
+                <textarea id="message"></textarea>
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox" name="termer" value="report">Jag godkänner att mina uppgifter sparas.
+            </label>
+
+            <button id="button">Skicka</button>
+        </form>
     </div>
     <footer>
         <p>&copy; 2026 Elden Ring Wiki. All rights reserved.</p>
