@@ -14,7 +14,8 @@ body{
     margin:0;
     height: 200vh;
     background-image: url("/Images/EldenRingCover.webp");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     overflow-x: hidden;
@@ -27,6 +28,7 @@ a{
     text-align: center;
 }
 .box{
+    transition: 0.2s;
     background-position: center;
     margin: 3%;
     display: inline-block;
@@ -40,11 +42,12 @@ a{
     background-size: cover;
     border-width: 0.05em;
     border-style: solid;
-    border-color: linen;
+    border-color: darkgoldenrod;
     -webkit-text-stroke: 0.3px linen;
 }
 .box:hover{
     transform: scale(1.1);
+    border-color: linen;
 }
 .font{
     font-family: "Playfair Display", serif;
