@@ -24,6 +24,7 @@ async function fetchApi(url) {
   try{
 const response = await fetch(url);
 const data = await response.json();
+const loading = document.getElementById("loading");
 console.log(data);
     apiData = data.data;
     if (!apiData) {
@@ -34,6 +35,8 @@ console.log(data);
 
    } catch(error){
     console.error("Error fetching the API:", error);
+  } finally {
+    loading.style.display = "none";
   }
 }
 
