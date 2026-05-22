@@ -1,5 +1,6 @@
 div{
     margin:1%;
+    align-self: flex-start;
 }
 .object_container{
     display: flex;
