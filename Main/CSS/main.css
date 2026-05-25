@@ -2,8 +2,13 @@ header{
     top: 0;
     position:sticky;
     font-size: 225%;
-    background-color: linen;
+    background-color: darkgoldenrod;
     width:100%;
+    transition: 0.3s;
+    z-index: 1000;
+}
+header:hover{
+    background-color: linen;
 }
 header *{
     display: inline-block;
@@ -43,11 +48,12 @@ a{
     border-width: 0.05em;
     border-style: solid;
     border-color: darkgoldenrod;
-    -webkit-text-stroke: 0.3px linen;
+    -webkit-text-stroke: 0.5px goldenrod;
 }
 .box:hover{
     transform: scale(1.1);
     border-color: linen;
+    -webkit-text-stroke: 0.5px linen;
 }
 .font{
     font-family: "Playfair Display", serif;
@@ -65,7 +71,7 @@ th, td{
 @media (max-width: 430px) {
     .box{
         width:40%;
-        font-size: 6vw;
+        font-size: 1.5em;
     }
     header{
         font-size: 200%;

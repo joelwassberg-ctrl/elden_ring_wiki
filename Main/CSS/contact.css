@@ -5,23 +5,39 @@
 button{
     padding: 1% 20%;
 }
+input[id=mail],
+input[id=subject],
+textarea{
+    border-radius: 10px;
+    width:100%;
+}
+
 input[type="checkbox"],
 input[type="radio"]{
     transform: scale(1.5);
+    margin-bottom: 5%;
+}
+form {
+    display: flex;
+    flex-direction: column;
 }
 form p{
-    display:inline-block;
+    margin:0;
 }
 .contact-container{
+    transition: 0.3s;
     padding: 1% 0;
     width:75%;
     margin: auto;
     display: flex;
-    background-color: lightgray;
+    background-color: darkgoldenrod;
     align-items: center;
-    font-size:150%;
+    font-size:100%;
     flex-direction: column;
     border-radius: 20px;
+}
+.contact-container:hover{
+    background-color: linen;
 }
 
 

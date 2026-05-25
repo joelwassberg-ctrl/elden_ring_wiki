@@ -26,6 +26,7 @@ const response = await fetch(url);
 const data = await response.json();
 const loading = document.getElementById("loading");
 console.log(data);
+//Det råkar finnas visa saker som finns 2 gånger i API:et, skaparen av API:ets fel om något displays 2 gånger
     apiData = data.data;
     if (!apiData) {
       console.log("Api data not found in the response. Check the API response structure. Or the API information is not found. Check the API url.");
