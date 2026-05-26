@@ -1,5 +1,7 @@
 header{
     top: 0;
+    display:flex;
+    align-items: center;
     position:sticky;
     font-size: 225%;
     background-color: darkgoldenrod;
@@ -68,13 +70,49 @@ th, td{
     border: 1px solid black;
     padding: 1%;
 }
+#hamburgerBtn{
+    margin-left:20%;
+    background: none;
+    border:none;
+    width:20%;
+    display:none;
+}
+#menu{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: linen;
+    height: 100vh;
+    width: 35%;
+    z-index: 999;
+}
+#menu a{
+    margin-top:150%;
+    margin-left: 5%;
+    display: block;
+    font-size: 150%;
+}
+#menu.open{
+    max-height: 100vh;
+    display: block;
+}
 @media (max-width: 430px) {
+    #hamburgerBtn{
+        display:block;
+    }
     .box{
         width:40%;
         font-size: 1.5em;
     }
     header{
         font-size: 200%;
+        position: relative;
+    }
+    header a{
+        display: none;
     }
     table{
         height:75%;
