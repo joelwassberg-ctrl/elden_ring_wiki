@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 boxes.forEach(box => {
 
-    box.addEventListener("click",() => {
-     const type = box.dataset.type;
+    const type = box.dataset.type;
     const id = box.dataset.id;
 
+    box.addEventListener("click",() => {
     window.location.href = `info.html?type=${type}&id=${id}`;
     });
  });

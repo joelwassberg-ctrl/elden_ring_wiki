@@ -57,6 +57,19 @@ a{
     border-color: linen;
     -webkit-text-stroke: 0.5px linen;
 }
+span{
+    display:inline-block;
+}
+@keyframes bounce{
+    from{
+        transform: translateY(0px);
+    } to {
+        transform: translateY(-10px);
+    }
+}
+.box:hover span{
+    animation: bounce 0.5s infinite alternate;
+}
 .font{
     font-family: "Playfair Display", serif;
 }
